@@ -5,10 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Assignment 2</title>
+    <title>Assignment 3</title>
+    
+          <script src="js/jquery.js"></script>
       <script src='js/script.js'> </script>
-    <script src = 'js/jReject/js/jquery.reject.js'
+    <script src = 'js/jReject/js/jquery.reject.js'> </script>
 <link rel="stylesheet" type="text/css" href="js/jReject/css/jquery.reject.css"/>  
+    
+    
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
         <link rel="stylesheet" href="style.css" >
@@ -21,11 +25,30 @@
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
        
-      <script src="js/jquery.js"></script>
+
      
+    
+    <script>
+    var start =function(){
+        $.reject({
+				reject: {
+					safari: false, // Apple Safari
+					chrome: false, // Google Chrome
+					firefox: false, // Mozilla Firefox
+					msie: true, // Microsoft Internet Explorer
+					opera: true, // Opera
+					konqueror: true, // Konqueror (Linux)
+					unknown: true // Everything else
+				}
+			}); // Customized Browsers
+        
+        
+        
+    }
+    </script>
 </head>
 
-<body> 
+<body onload="start()"> 
     
    
     
